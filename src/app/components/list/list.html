@@ -1,0 +1,37 @@
+@if(activities$ | async; as list){
+    @if(list.length > 0){
+            <table class="table table-bordered border-dark">
+                <tr>
+                    <th>Naam</th>
+                    <th>Categorie</th>
+                    <th>Moeilijkheidsgraad</th>
+                    <th>Aantal deelnemers</th>
+                    <th>Status</th>
+                </tr>
+                @for(activity of list ; track activity.id){
+                    <tr style="cursor: pointer;" (click)="selectActivity(activity)">
+                        <td style="font-weight: bold;">{{ activity.name }}</td>
+                        <td>{{ activity.category }}</td>
+                        <td>{{ activity.difficulty }}</td>
+                        <td>{{ activity.maxParticipants }}</td>
+                        <td>
+                            @if(activity.active){
+                                <p class="badge bg-success text-white">Actief</p>
+                            }
+                            @else{
+                                <p class="badge bg-danger  text-white">Inactief</p>
+                            }
+                        </td>
+                    </tr>
+                }
+                
+
+
+            </table>
+
+            <button class="btn btn-secondary m-3" (click)="showAverageParticipants()">Toon gemiddeld aantal deelnemers</button>
+    }
+    @else{
+        <p style="color: red; font-weight: bold;">Er zijn geen activiteiten gevonden die overeenkomen met de huidige filters.</p>
+    }
+}

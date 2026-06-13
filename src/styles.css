@@ -1,1 +1,48 @@
-/* You can add global styles to this file, and also import other style files */
+.bg-gradient {
+    background: linear-gradient(45deg, orange, red) !important ;
+    color: white !important;
+    border: none;
+}
+.app-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 3px 20px;
+    align-items: center;
+    text-align: left;
+}
+.page-title {
+    font-size: 28px;
+    font-weight: medium;
+    align-items: center;
+    text-align: left;
+    color: gray;
+}
+.app-nav {
+    font-size: 18px;
+    margin: auto;
+    font-weight: medium;
+}
+.active {
+    font-weight: bold;
+}
+th, td {
+    padding: 3px 10px;
+}
+th {
+    background-color: black;
+    color: white;
+}
+td {
+    background-color: white;
+}
+ul {
+    text-align: center;
+    align-items: center;
+    padding: 12px;
+}
+li {
+    font-size: 22px;
+}
+a {
+    margin-right: 24px;
+}

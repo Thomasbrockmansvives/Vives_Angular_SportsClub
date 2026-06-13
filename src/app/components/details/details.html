@@ -1,0 +1,38 @@
+
+
+@if(selectedactivity){
+    <div class="page-title m-3">Details</div>
+    <table class="m-4">
+        <tr>
+            <td><strong>Naam:</strong></td>
+            <td>{{ selectedactivity.name }}</td>
+        </tr>
+        <tr>
+            <td><strong>Categorie:</strong></td>
+            <td>{{ selectedactivity.category }}</td>
+        </tr>
+        <tr>
+            <td><strong>Moeilijkheidsgraad:</strong></td>
+            <td>{{ selectedactivity.difficulty }}</td>
+        </tr>
+        <tr>
+            <td><strong>Aantal deelnemers:</strong></td>
+            <td>{{ selectedactivity.maxParticipants }}</td>
+        </tr>
+        <tr>
+            <td><strong>Status:</strong></td>
+            <td>
+                @if(selectedactivity.active){
+                    <p class="badge bg-success text-white">Actief</p>
+                }
+                @else{
+                    <p class="badge bg-danger  text-white">Inactief</p>
+                }
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Beschrijving:</strong></td>
+            <td>{{ selectedactivity.description }}</td>
+        </tr>
+    </table>
+}
