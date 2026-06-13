@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Morning Yoga",
+    "category": "Mind & Body",
+    "difficulty": "Beginner",
+    "maxParticipants": 20,
+    "active": true,
+    "description": "Rustige yogales om de dag ontspannen te starten."
+  },
+  {
+    "id": 2,
+    "name": "HIIT Power",
+    "category": "Cardio",
+    "difficulty": "Advanced",
+    "maxParticipants": 15,
+    "active": true,
+    "description": "Intensieve intervaltraining voor gevorderden."
+  },
+  {
+    "id": 3,
+    "name": "Zumba Dance",
+    "category": "Dance",
+    "difficulty": "Intermediate",
+    "maxParticipants": 25,
+    "active": true,
+    "description": "Dansles op energieke muziek."
+  },
+  {
+    "id": 4,
+    "name": "Body Pump",
+    "category": "Strength",
+    "difficulty": "Intermediate",
+    "maxParticipants": 18,
+    "active": false,
+    "description": "Krachttraining met halters en muziek."
+  },
+  {
+    "id": 5,
+    "name": "Pilates Core",
+    "category": "Mind & Body",
+    "difficulty": "Beginner",
+    "maxParticipants": 16,
+    "active": true,
+    "description": "Training gericht op houding, stabiliteit en core."
+  },
+  {
+    "id": 6,
+    "name": "Spinning",
+    "category": "Cardio",
+    "difficulty": "Intermediate",
+    "maxParticipants": 22,
+    "active": true,
+    "description": "Fietstraining op muziek met verschillende intensiteiten."
+  },
+  {
+    "id": 7,
+    "name": "Strength Circuit",
+    "category": "Strength",
+    "difficulty": "Advanced",
+    "maxParticipants": 12,
+    "active": false,
+    "description": "Circuittraining met focus op kracht en uithouding."
+  },
+  {
+    "id": 8,
+    "name": "Dance Fit",
+    "category": "Dance",
+    "difficulty": "Beginner",
+    "maxParticipants": 30,
+    "active": true,
+    "description": "Toegankelijke dansworkout voor alle niveaus."
+  }
+]
