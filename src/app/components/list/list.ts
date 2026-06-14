@@ -55,6 +55,7 @@ export class List implements OnInit{
   }  
 
   selectActivity(activity : Activity) : void {
+    
     this.activitybus.emit(activity);
   }
 
@@ -83,4 +84,5 @@ export class List implements OnInit{
       map(data => data.reduce((total, event) => total + event.maxParticipants, 0) / data.length)
     )
   }
+
 }
