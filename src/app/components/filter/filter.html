@@ -1,5 +1,5 @@
-<input type="text" class="rounded border border-1 border-dark p-2" [(ngModel)]="searchterm" placeholder="typ om te zoeken op activiteit..." style="width: 400px; height: 30px; margin-bottom: 10px;" (keyup.enter)="filteractivities()">
+<input type="text" class="rounded border border-1 border-dark p-2" [(ngModel)]="searchterm" placeholder="typ om te zoeken op activiteit..." style="width: 400px; height: 30px; margin-bottom: 10px;" (keyup)="filteractivities()">
 <br>
-<button class="btn btn-secondary" (click)="resetsearchterm()" style="height: 30px; font-size: 14px; margin-top: 10px; margin-bottom: 30px;">Reset</button>
+<button class="btn btn-secondary m-3" (click)="resetsearchterm()">Reset</button>
 <br>
 <input type="checkbox" [(ngModel)]="showonlybigactivities" class="m-3" (change)="changeShowOnlyBigActivities()"><label>Toon enkel grote activiteiten met meer dan 20 deelnemers.</label>
